@@ -34,6 +34,10 @@ a:hover {
   color: #552288;
 }
 
+#burgerLinks {
+  display: none;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -82,7 +86,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
 
 .card {
   padding: 2em;
