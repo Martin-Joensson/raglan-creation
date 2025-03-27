@@ -26,22 +26,15 @@ export const Header = () => {
 
   return (
     <nav className="bg-gray-200 text-white w-screen z-50">
-      <NavLink to="/">
-        <h1 className="font-poppins p-4 text-center">Raglan Creation</h1>
-      </NavLink>
-
-      <div className="flex w-full items-center px-4 py-2">
-        <div className="hidden w-full tablet:flex my-4 justify-evenly font-headerFont ">
-          <NavLink to="/resume">
-            <p>Resume</p>
-          </NavLink>
-          <NavLink to="/photography">
-            <p>Photography</p>
-          </NavLink>
-        </div>
+      <div className="flex items-center justify-between">
+        <NavLink to="/">
+          <h1 className="font-poppins p-4 w-fit desktop:text-center">
+            Raglan Creation
+          </h1>
+        </NavLink>
 
         <div
-          className="tablet:hidden cursor-pointer my-4 justify-evenly w-full flex"
+          className="tablet:hidden cursor-pointer m-4 flex"
           onClick={toggleMobileMenu}
         >
           <svg
@@ -59,18 +52,28 @@ export const Header = () => {
             />
           </svg>
         </div>
+        <div className="hidden w-full tablet:flex">
+          <div className=" hidden w-full tablet:flex my-4 justify-evenly font-headerFont items-center px-4 py-2">
+            <NavLink to="/resume">
+              <p>Resume</p>
+            </NavLink>
+            <NavLink to="/projects">
+              <p>Projects</p>
+            </NavLink>
+          </div>
+        </div>
       </div>
 
       <div
         id="mobilemenu"
         ref={mobileMenuRef}
-        className="flex flex-col items-center tablet:flex-row my-4 justify-evenly font-headerFont hidden tablet:hidden"
+        className="flex bg-slate-50 flex-col items-center tablet:flex-row justify-evenly font-headerFont hidden tablet:hidden"
       >
         <NavLink to="/resume">
           <p>Resume</p>
         </NavLink>
-        <NavLink to="/photography">
-          <p>Photography</p>
+        <NavLink to="/projects">
+          <p>Projects</p>
         </NavLink>
       </div>
     </nav>
