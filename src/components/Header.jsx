@@ -28,7 +28,7 @@ export const Header = () => {
     <nav className="bg-gray-200 text-white w-screen z-50">
       <div className="flex items-center justify-between">
         <NavLink to="/">
-          <h1 className="font-poppins p-4 w-fit desktop:text-center">
+          <h1 className="font-poppins p-4 w-full desktop:text-center">
             Raglan Creation
           </h1>
         </NavLink>
@@ -52,8 +52,8 @@ export const Header = () => {
             />
           </svg>
         </div>
-        <div className="hidden w-full tablet:flex">
-          <div className=" hidden w-full tablet:flex my-4 justify-evenly font-headerFont items-center px-4 py-2">
+        <div className="hidden tablet:flex w-1/2 justify-evenly">
+          <div className=" hidden tablet:flex w-full my-4 justify-evenly font-headerFont items-center px-4 py-2 gap-4">
             <NavLink to="/resume">
               <p>Resume</p>
             </NavLink>

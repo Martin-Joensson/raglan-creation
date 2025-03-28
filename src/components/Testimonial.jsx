@@ -1,4 +1,5 @@
 import React from "react";
+import { TestimonialCard } from "./TestimonialCard";
 
 export const Testimonial = () => {
   const bgImg =
@@ -6,11 +7,13 @@ export const Testimonial = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImg})` }}
-      className="bg-purple-300 w-screen p-10 "
+      className="bg-purple-300 w-screen flex justify-between"
     >
-      <div className="flex flex-col gap-2 z-20 tablet:w-1/2 border rounded-lg p-10 justify-center">
+      <img src={bgImg} className="object-cover w-2/5 h-full hidden tablet:block"/>
+      <div className="flex flex-col m-4 gap-2 z-20 tablet:w-1/2 tablet:justify-right border rounded-lg p-10 justify-center">
+        
         <h2>What are others saying about us</h2>
-        <p>We'll get you noticed on the web</p>
+        <TestimonialCard />
       </div>
     </div>
   );

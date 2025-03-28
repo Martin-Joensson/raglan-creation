@@ -9,10 +9,13 @@ export const Hero = () => {
       style={{ backgroundImage: `url(${bgImg})` }}
       className="relative bg-center w-screen p-10"
     >
-      <div className=" flex flex-col gap-2 z-20 border tablet:w-1/2 backdrop-opacity-40 rounded-lg p-10">
+      <div className="flex flex-col gap-2 z-20 border tablet:w-1/2 backdrop-opacity-40 rounded-lg p-10">
         <h2>Get your website up and running.</h2>
         <p>We'll get you noticed on the web</p>
         <button className="w-fit"> Contact</button>
+      </div>
+      <div>
+        <img src={ bgImg} className=" hidden tablet:block w-2/5 object-cover absolute right-0 top-0 h-full z-0" />
       </div>
     </div>
   );
