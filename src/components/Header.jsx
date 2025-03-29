@@ -26,7 +26,7 @@ export const Header = () => {
 
   return (
     <nav className="bg-gray-200 text-white w-screen z-50">
-      <div className="flex items-center justify-between">
+      <div className="flex items-baseline justify-between">
         <NavLink to="/">
           <h1 className="font-poppins p-4 w-full desktop:text-center">
             Raglan Creation
