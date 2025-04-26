@@ -8,6 +8,8 @@
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
   --breakpoint-wide: 120rem;
+
+  --text-color-light-links: rgba(255,255,255,0.87);
 }
 
 @utility scrollbar-hidden {
@@ -41,6 +43,10 @@ a:hover {
 
 #burgerLinks {
   display: none;
+}
+
+#buttonLink {
+  color: #ffffff;
 }
 
 body {

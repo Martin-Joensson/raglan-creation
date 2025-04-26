@@ -19,7 +19,7 @@ export const Resume = () => {
         <Education /> */}
         <iframe
           src="https://www.raglancreation.com"
-          className="w-full min-h-full scroll-auto wide:w-2/3 wide:m-auto scrollbar-hidden"
+          className="w-full min-h-full scroll-auto scrollbar-hidden"
         ></iframe>
       </div>
     </div>

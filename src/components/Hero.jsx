@@ -12,16 +12,25 @@ export const Hero = () => {
       className="relative bg-center bg-cover w-full flex justify-between"
     >
       <div className="flex flex-col gap-2 z-20 border tablet:w-1/2 backdrop-opacity-40 rounded-lg m-10 p-10">
-        <h2>Get your website up and running.</h2>
-        <p>We'll get you noticed on the web</p>
-        <button className="w-fit"> Contact</button>
+        <h2 className="">Get your website up and running.</h2>
+        <p>
+          We design, build, and launch sites
+          that look sharp and perform even sharper. Let’s make something awesome
+          together.
+        </p>
+        <a href="mailto:martin.t.joensson@gmail.com" className="buttonlink">
+          {" "}
+          <button className="w-fit buttonLink">
+            {" "}
+            <p className="text-light-links">Contact</p>
+          </button>
+        </a>
       </div>
 
-        <img
-          src={sideImg}
-          className="hidden tablet:block w-2/5 object-cover z-0"
-        />
-  
+      <img
+        src={sideImg}
+        className="hidden tablet:block w-2/5 object-cover z-0"
+      />
     </div>
   );
 };

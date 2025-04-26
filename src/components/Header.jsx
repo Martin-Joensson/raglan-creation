@@ -54,9 +54,9 @@ export const Header = () => {
         </div>
         <div className="hidden tablet:flex w-1/2 justify-evenly">
           <div className=" hidden tablet:flex w-full my-4 justify-evenly font-headerFont items-center px-4 py-2 gap-4">
-            <NavLink to="/resume">
+            <a href="https://www.raglancreation.com">
               <p>Portfolio</p>
-            </NavLink>
+            </a>
             {/* <NavLink to="/projects">
               <p>Projects</p>
             </NavLink> */}
