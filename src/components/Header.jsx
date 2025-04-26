@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import logo from "../assets/RaglanVector.svg"
 
 export const Header = () => {
   const mobileMenuRef = useRef(null);
@@ -27,7 +28,8 @@ export const Header = () => {
   return (
     <nav className="bg-gray-300 w-screen sticky  top-0 z-50">
       <div className="flex items-baseline wide:w-2/3 wide:m-auto justify-between">
-        <NavLink to="/">
+        <NavLink to="/" className="flex ">
+          <img src={logo} className="h-10 my-4"/>
           <h1 className="font-poppins p-4 w-full desktop:text-center">
             Raglan Creation
           </h1>
@@ -54,7 +56,7 @@ export const Header = () => {
         </div>
         <div className="hidden tablet:flex w-1/2 justify-evenly">
           <div className=" hidden tablet:flex w-full my-4 justify-evenly font-headerFont items-center px-4 py-2 gap-4">
-            <a href="https://www.raglancreation.com">
+            <a href="https://www.raglancreation.com/portfolio">
               <p>Portfolio</p>
             </a>
             {/* <NavLink to="/projects">
