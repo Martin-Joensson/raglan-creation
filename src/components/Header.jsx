@@ -25,8 +25,8 @@ export const Header = () => {
   const handleClick = () => {};
 
   return (
-    <nav className="bg-gray-200 text-white w-screen z-50">
-      <div className="flex items-baseline justify-between">
+    <nav className="bg-gray-300 w-screen sticky  top-0 z-50">
+      <div className="flex items-baseline wide:w-2/3 wide:m-auto justify-between">
         <NavLink to="/">
           <h1 className="font-poppins p-4 w-full desktop:text-center">
             Raglan Creation
@@ -55,11 +55,11 @@ export const Header = () => {
         <div className="hidden tablet:flex w-1/2 justify-evenly">
           <div className=" hidden tablet:flex w-full my-4 justify-evenly font-headerFont items-center px-4 py-2 gap-4">
             <NavLink to="/resume">
-              <p>Resume</p>
+              <p>Portfolio</p>
             </NavLink>
-            <NavLink to="/projects">
+            {/* <NavLink to="/projects">
               <p>Projects</p>
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </div>
@@ -70,11 +70,11 @@ export const Header = () => {
         className="flex bg-slate-50 flex-col items-center tablet:flex-row justify-evenly font-headerFont hidden tablet:hidden"
       >
         <NavLink to="/resume">
-          <p>Resume</p>
+          <p>Portfolio</p>
         </NavLink>
-        <NavLink to="/projects">
+        {/* <NavLink to="/projects">
           <p>Projects</p>
-        </NavLink>
+        </NavLink> */}
       </div>
     </nav>
   );

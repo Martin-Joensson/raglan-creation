@@ -10,7 +10,7 @@ export const Testimonial = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImg})` }}
-      className="bg-purple-300 w-screen flex justify-between "
+      className="bg-purple-300 w-full flex justify-between bg-cover"
     >
       <img src={sideImg} className="object-cover w-2/5 hidden tablet:block" />
       <div className="flex flex-col m-10 gap-2 z-20 w-full tablet:w-1/2 tablet:justify-right border rounded-lg p-10 justify-center">

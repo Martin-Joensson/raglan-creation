@@ -13,10 +13,14 @@ export const Resume = () => {
       </div> */}
 
       {/* Main Content */}
-      <div className="bg-slate-600 w-full px-10 py-4">
-        <Bio />
+      <div className="bg-slate-600 w-full">
+        {/* <Bio />
         <Work />
-        <Education />
+        <Education /> */}
+        <iframe
+          src="https://www.raglancreation.com"
+          className="w-full min-h-full scroll-auto wide:w-2/3 wide:m-auto scrollbar-hidden"
+        ></iframe>
       </div>
     </div>
   );

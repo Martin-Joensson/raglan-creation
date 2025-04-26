@@ -4,7 +4,7 @@ import { ContentRoutes } from "./routes/ContentRoutes";
 
 export const App = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex relative flex-col min-h-screen">
       <Header />
       <main className="flex flex-grow flex-1 justify-center">
         <ContentRoutes />

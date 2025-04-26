@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImg})` }}
-      className="relative bg-center w-screen flex justify-between"
+      className="relative bg-center bg-cover w-full flex justify-between"
     >
       <div className="flex flex-col gap-2 z-20 border tablet:w-1/2 backdrop-opacity-40 rounded-lg m-10 p-10">
         <h2>Get your website up and running.</h2>

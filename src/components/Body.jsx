@@ -6,7 +6,7 @@ import { ImageContainer } from "./ImageContainer";
 
 export const Body = () => {
   return (
-    <div>
+    <div className="wide:w-2/3 wide:m-auto">
       <Hero />
       <ImageContainer
         content={true}
