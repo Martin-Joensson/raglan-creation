@@ -15,7 +15,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-header w-screen sticky  top-0 z-50">
+    <header className="bg-header w-screen tablet:sticky  top-0 z-50">
       <nav className="flex items-center wide:w-2/3 wide:m-auto justify-between">
         <NavLink to="/" className="flex items-center">
           <img src={logo} className="h-10 ml-8 m-3" />

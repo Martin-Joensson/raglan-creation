@@ -12,7 +12,7 @@ export const Catastrophic = () => {
       <h2 className="py-4 hidden">Catastrophic Failure</h2>
       <img
         src={chest}
-        className="w-1/5 m-auto rounded-full"
+        className="w-1/2 laptop:w-1/4 m-auto rounded-full"
         alt="A pixelart chest."
       />
 
@@ -26,7 +26,7 @@ export const Catastrophic = () => {
       <p className="w-1/2 m-auto">Check back soon for more!</p>
       <img
         src={coin}
-        className="w-1/5 m-auto rounded-full"
+        className="w-1/2 laptop:w-1/4 m-auto rounded-full"
         alt="A pixelart frog with blue sky."
       />
       {/* <Rules /> */}
