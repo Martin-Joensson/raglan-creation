@@ -15,7 +15,11 @@ export const Testimonial = () => {
       <img src={sideImg} className="object-cover w-2/5 hidden tablet:block" />
       <div className="flex flex-col m-10 gap-2 z-20 w-full tablet:w-1/2 tablet:justify-right border rounded-lg p-10 justify-center">
         <h2>What are others saying about us</h2>
-        <TestimonialCard text='"It was easy working with Martin!"' face="1" rating={4} />
+        <TestimonialCard
+          text='"It was easy working with Martin!"'
+          face="1"
+          rating={4}
+        />
         <TestimonialCard
           text='"The new site is our link to our members."'
           face="3"

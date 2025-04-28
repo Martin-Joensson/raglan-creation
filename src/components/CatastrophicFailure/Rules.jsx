@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
 
 export const Rules = () => {
   return (
-    <div>Catastrophic Failure Rules</div>
-  )
-}
+    <div>
+      <h3>Catastrophic Failure Rules</h3>
+      <ul>
+        <li>
+          Dice pool
+        </li>
+      </ul>
+    </div>
+  );
+};

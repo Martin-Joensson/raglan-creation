@@ -11,18 +11,19 @@ export const Hero = () => {
       style={{ backgroundImage: `url(${bgImg})` }}
       className="relative bg-center bg-cover w-full flex justify-between"
     >
-      <div className="flex flex-col gap-2 z-20 border tablet:w-1/2 backdrop-opacity-40 rounded-lg m-10 p-10">
-        <h2 className="">Get your website up and running.</h2>
-        <p>
-          We design, build, and launch sites
-          that look sharp and perform even sharper. Let’s make something awesome
-          together.
-        </p>
+      <div className="flex flex-col gap-8 z-20 border tablet:w-1/2 m-auto my-10 backdrop-opacity-40 justify-between rounded-lg p-10">
+        <div>
+          <h2 className="mb-2">Get your website up and running.</h2>
+          <p>
+            We design, build, and launch sites that look sharp and perform even
+            sharper. Let’s make something awesome together.
+          </p>
+        </div>
         <a href="mailto:martin.t.joensson@gmail.com" className="buttonlink">
           {" "}
-          <button className="w-fit buttonLink">
+          <button className="w-full buttonLink buttonLinkAnimate">
             {" "}
-            <p className="text-light-links">Contact</p>
+            <p className="text-light-links hover:text-burger-links">Contact</p>
           </button>
         </a>
       </div>

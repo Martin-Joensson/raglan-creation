@@ -1,8 +1,8 @@
 import React from "react";
-import { Work } from "./Resume/Work";
-import { Education } from "./Resume/Education";
-import { Sidebar } from "./Resume/Sidebar";
-import { Bio } from "./Resume/Bio";
+import { Work } from "./Work";
+import { Education } from "./Education";
+import { Sidebar } from "./Sidebar";
+import { Bio } from "./Bio";
 
 export const Resume = () => {
   return (
@@ -18,7 +18,7 @@ export const Resume = () => {
         <Work />
         <Education /> */}
         <iframe
-          src="https://www.raglancreation.com"
+          src="https://portfolio.raglancreation.com"
           className="w-full min-h-full scroll-auto scrollbar-hidden"
         ></iframe>
       </div>
