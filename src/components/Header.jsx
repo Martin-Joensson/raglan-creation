@@ -7,6 +7,8 @@ import logo from "../assets/RaglanVector.svg";
 export const Header = () => {
   const mobileMenuRef = useRef(null);
 
+
+
   const toggleMobileMenu = () => {
     if (mobileMenuRef.current) {
       // Toggle visibility of the mobile menu
@@ -53,6 +55,9 @@ export const Header = () => {
               <p className="hover:text-burger-links">Catastrophic Failure</p>
             </NavLink>
 
+            <NavLink to="/dopamine" onClick={toggleMobileMenu}>
+              <p className="hover:text-burger-links">Dopamine Menu</p>
+            </NavLink>
             <NavLink to="/resume" onClick={toggleMobileMenu}>
               <p className="hover:text-burger-links">About</p>
             </NavLink>
@@ -71,6 +76,10 @@ export const Header = () => {
 
         <NavLink to="/catastrophic" onClick={toggleMobileMenu}>
           <p className="hover:text-burger-links">Catastrophic Failure</p>
+        </NavLink>
+
+        <NavLink to="/dopamine" onClick={toggleMobileMenu}>
+          <p className="hover:text-burger-links">Dopamine Menu</p>
         </NavLink>
 
         <NavLink to="/resume" onClick={toggleMobileMenu}>

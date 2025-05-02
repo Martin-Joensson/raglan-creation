@@ -9,11 +9,11 @@
   --breakpoint-desktop: 80rem;
   --breakpoint-wide: 100rem;
 
-  --text-color-light-links: rgba(255,255,255,0.87);
-    --text-color-burger-links: #9966cc;
-  --background-color-header: rgba(255,255,255,0.97);
+  --text-color-light-links: rgba(255, 255, 255, 0.87);
+  --text-color-burger-links: #9966cc;
+  --background-color-header: rgba(255, 255, 255, 0.97);
 
-    --background-color-hamburger: rgba(255,255,255,0.87);
+  --background-color-hamburger: rgba(255, 255, 255, 0.87);
 }
 
 @utility scrollbar-hidden {
@@ -34,6 +34,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+hr {
+  border-color: #aaa;
+  border-style: solid;
+  border-width: 2px 0 0;
 }
 
 a {
@@ -102,6 +108,15 @@ button:focus-visible {
   }
 }
 
+/* @media print {
+  body {
+    visibility: hidden;
+  }
+  #printable {
+    visibility: visible;
+  }
+} */
+
 .buttonLinkAnimate {
   border-color: #181818;
   animation-name: blink;
@@ -123,7 +138,6 @@ button:focus-visible {
   border: 1px solid red;
   margin-bottom: 1em;
 }
-
 
 @keyframes blink {
   0%,
