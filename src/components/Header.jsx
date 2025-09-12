@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +6,7 @@ import logo from "../assets/RaglanVector.svg";
 
 export const Header = () => {
   const mobileMenuRef = useRef(null);
+  const [pageCategory, setPageCategory] = useState("web");
 
 
 
@@ -55,9 +56,9 @@ export const Header = () => {
               <p className="hover:text-burger-links">Catastrophic Failure</p>
             </NavLink>
 
-            <NavLink to="/dopamine" onClick={toggleMobileMenu}>
+            {/* <NavLink to="/dopamine" onClick={toggleMobileMenu}>
               <p className="hover:text-burger-links">Dopamine Menu</p>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/resume" onClick={toggleMobileMenu}>
               <p className="hover:text-burger-links">About</p>
             </NavLink>
@@ -78,9 +79,9 @@ export const Header = () => {
           <p className="hover:text-burger-links">Catastrophic Failure</p>
         </NavLink>
 
-        <NavLink to="/dopamine" onClick={toggleMobileMenu}>
+        {/* <NavLink to="/dopamine" onClick={toggleMobileMenu}>
           <p className="hover:text-burger-links">Dopamine Menu</p>
-        </NavLink>
+        </NavLink> */}
 
         <NavLink to="/resume" onClick={toggleMobileMenu}>
           <p className="hover:text-burger-links">About</p>
