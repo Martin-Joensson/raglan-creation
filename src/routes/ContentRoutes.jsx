@@ -10,7 +10,8 @@ import { Dopamine } from "../components/DopamineMenu/Dopamine";
 export const ContentRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<WebDev />} />
+      <Route path="/" element={<Landing />} />
+      <Route path="/landing" element={<Landing />} />
       <Route path="/webdev" element={<WebDev />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/projects" element={<Projects />} />
