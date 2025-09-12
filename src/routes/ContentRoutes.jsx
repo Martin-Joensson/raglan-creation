@@ -6,12 +6,13 @@ import { Catastrophic } from "../components/CatastrophicFailure/Catastrophic";
 import { WebDev } from "../components/WebDev/WebDev";
 import { Landing } from "../components/Landing/Landing";
 import { Dopamine } from "../components/DopamineMenu/Dopamine";
+import { Photo } from "../components/Photography/Photo";
 
 export const ContentRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
-      <Route path="/landing" element={<Landing />} />
+      <Route path="/photography" element={<Photo />} />
       <Route path="/webdev" element={<WebDev />} />
       <Route path="/resume" element={<Resume />} />
       <Route path="/projects" element={<Projects />} />
