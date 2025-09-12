@@ -6,7 +6,7 @@ import logo from "../assets/RaglanVector.svg";
 
 export const Header = () => {
   const mobileMenuRef = useRef(null);
-  const [pageCategory, setPageCategory] = useState();
+  const [pageCategory, setPageCategory] = useState("web");
 
 
 

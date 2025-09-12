@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { ContentRoutes } from "./routes/ContentRoutes";
+import logo from "./assets/RaglanVector.svg";
 
 export const App = () => {
   const [headerAndFooter, setHeaderAndFooter] = useState(false);
@@ -12,6 +13,8 @@ export const App = () => {
 
   useEffect(() => {
     if (slug.pathname == "/") {
+      setHeaderAndFooter(false);
+    } else if (slug.pathname.includes("/photography")) {
       setHeaderAndFooter(false);
     } else {
       setHeaderAndFooter(true);
@@ -34,6 +37,14 @@ export const App = () => {
         </>
       ) : (
         <>
+          <div>
+            <NavLink to="/" className="flex items-center">
+              <img src={logo} className="h-10 ml-8 m-3" />
+              <h1 className="font-poppins m-3 w-full desktop:text-center hidden">
+                Raglan Creation
+              </h1>
+            </NavLink>
+          </div>
           <div className="hidden">
             <Header />
           </div>

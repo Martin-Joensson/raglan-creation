@@ -5,13 +5,26 @@ import { PhotoCard } from "./PhotoCard";
 import images from "../../assets/photos.json";
 import { PhotoNotFound } from "./PhotoNotFound";
 
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faImagePortrait,
+  faMountainSun,
+  faTreeCity,
+  faCrow,
+} from "@fortawesome/free-solid-svg-icons";
+import { PhotoHeader } from "./PhotoHeader";
+
+const street = <FontAwesomeIcon icon={faTreeCity} />;
+const wild = <FontAwesomeIcon icon={faCrow} />;
+const hill = <FontAwesomeIcon icon={faMountainSun} />;
+const portrait = <FontAwesomeIcon icon={faImagePortrait} />;
+
 export const Gallery = () => {
   let { category } = useParams();
   let galleryTitle = CapitalizeFirstLetter(category);
   let validCategoryList = ["wildlife", "landscape", "street", "portrait"];
-    const [validCategory, setValidCategory] = useState(false);
-    
-    console.log("Category SLug:", category)
+  const [validCategory, setValidCategory] = useState(false);
 
   const validCategoryCheck = () => {
     if (validCategoryList.includes(category)) {
@@ -28,8 +41,6 @@ export const Gallery = () => {
       return <PhotoCard image={image} key={index} />;
     }
   };
-  // Return images that correspond to chosen category.
-  // Get gallery information from JSON?
 
   useEffect(() => {
     validCategoryCheck();
@@ -37,23 +48,25 @@ export const Gallery = () => {
 
   return (
     <div>
-      {validCategory ? (
-        <div>
-          {" "}
-          <div className=" font-headerFont">
-            <h3 className="mt-2 text-3xl">{galleryTitle} Gallery</h3>
+      <PhotoHeader />
+      <div>
+        {validCategory ? (
+          <div className="m-auto">
+            <div className=" font-headerFont">
+              <h3 className="px-14 photoLink mt-2 text-3xl">
+                {galleryTitle} Gallery
+              </h3>
+            </div>
+            <div className="px-10 grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3">
+              {images.map((image, index) => checkCategory(image, index))}
+            </div>
           </div>
-          <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4">
-            {images.map((image, index) => checkCategory(image, index))}
-          </div>
-        </div>
-      ) : (
-        <>
-          <PhotoNotFound />
-        </>
-      )}
+        ) : (
+          <>
+            <PhotoNotFound />
+          </>
+        )}
+      </div>
     </div>
-    // Map over all images and place in grid. change grid size responsively
-    // pressing image will show lightroom version, arrows to move to next image
   );
 };

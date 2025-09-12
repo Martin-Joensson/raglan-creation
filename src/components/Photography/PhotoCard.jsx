@@ -20,7 +20,7 @@ export const PhotoCard = ({ image, index }) => {
       <div key={index} className="border border-gray-600 m-4 p-4">
         <img
           onClick={handleClick}
-          className="mb-6 h-80 w-full object-cover cursor-pointer"
+          className="mb-6 h-80 w-80 m-auto object-cover cursor-pointer"
           src={image.path}
           alt={image.alttext}
         />
