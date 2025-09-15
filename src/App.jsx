@@ -29,7 +29,9 @@ export const App = () => {
             <Header />
           </div>
           <main className="flex flex-grow flex-1 justify-center">
-            <ContentRoutes />
+            <div>
+              <ContentRoutes />
+            </div>
           </main>
           <div>
             <Footer />
@@ -39,8 +41,8 @@ export const App = () => {
         <>
           <div>
             <NavLink to="/" className="flex items-center">
-              <img src={logo} className="h-10 ml-8 m-3" />
-              <h1 className="font-poppins m-3 w-full desktop:text-center hidden">
+              <img src={logo} className="h-10 ml-8 my-3" />
+              <h1 className="font-poppins my-3 w-full desktop:text-center hidden">
                 Raglan Creation
               </h1>
             </NavLink>
