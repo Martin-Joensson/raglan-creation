@@ -60,7 +60,7 @@ export const Header = () => {
               <p className="hover:text-burger-links">Dopamine Menu</p>
             </NavLink> */}
             <NavLink to="/resume" onClick={toggleMobileMenu}>
-              <p className="hover:text-burger-links">About</p>
+              <p className="hover:text-burger-links">Projects</p>
             </NavLink>
           </div>
         </div>
@@ -69,7 +69,7 @@ export const Header = () => {
       <nav
         id="mobilemenu"
         ref={mobileMenuRef}
-        className="flex bg-header absolute right-0 w-2/3 flex-col pt-4 rounded-b-2xl border-b-2 border-l-2 pb-6 gap-2 items-center tablet:flex-row justify-evenly font-headerFont hidden laptop:hidden"
+        className="flex bg-header absolute z-50 right-0 w-2/3 flex-col pt-4 rounded-b-2xl border-b-2 border-l-2 pb-6 gap-2 items-center tablet:flex-row justify-evenly font-headerFont hidden laptop:hidden"
       >
         <NavLink to="/webdev" onClick={toggleMobileMenu}>
           <p className="hover:text-burger-links">Web Development</p>
@@ -84,7 +84,7 @@ export const Header = () => {
         </NavLink> */}
 
         <NavLink to="/resume" onClick={toggleMobileMenu}>
-          <p className="hover:text-burger-links">About</p>
+          <p className="hover:text-burger-links">Projects</p>
         </NavLink>
       </nav>
     </header>
