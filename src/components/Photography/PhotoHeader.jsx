@@ -20,7 +20,7 @@ export const PhotoHeader = () => {
           Martin Jönsson Photography
         </h1>
       </NavLink>
-      <div className="photoLink w-full flex flex-row my-8 justify-evenly font-headerFont">
+      <div className="photoLink flex flex-row my-8 justify-evenly font-headerFont">
         <NavLink to="/photography/wildlife">
           <h2 className="photoLink hidden tablet:flex">WildLife</h2>
           <p className="photoLink tablet:hidden">{wild}</p>
