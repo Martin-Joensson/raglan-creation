@@ -18,7 +18,7 @@ export const Landing = () => {
       </video>
       <div className="absolute top-1 flex justify-center w-screen h-full">
         <div className="flex flex-col w-2/3 m-auto">
-          <img src={raglanLogo} className="w-4/5 tablet:w-3/5 desktop:w-2/5 wide:w-1/4 m-auto mb-20" />
+          <img src={raglanLogo} className="w-4/5 tablet:w-2/5 tablet:max-h-1/10 desktop:w-2/5 wide:w-1/4 m-auto mb-20" />
 
           <div className="flex flex-col tablet:flex-row gap-6 tablet:w-4/5 desktop:w-3/5 m-auto text-center text-md desktop:text-2xl justify-between">
             <NavLink
