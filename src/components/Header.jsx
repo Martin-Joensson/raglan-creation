@@ -6,7 +6,7 @@ import logo from "../assets/RaglanVector.svg";
 
 export const Header = () => {
   const mobileMenuRef = useRef(null);
-  const [pageCategory, setPageCategory] = useState();
+  const [pageCategory, setPageCategory] = useState("web");
 
 
 
@@ -22,7 +22,7 @@ export const Header = () => {
       <nav className="flex items-center wide:w-2/3 wide:m-auto justify-between">
         <NavLink to="/" className="flex items-center">
           <img src={logo} className="h-10 ml-8 m-3" />
-          <h1 className="font-poppins m-3 w-full desktop:text-center hidden tablet:block">
+          <h1 className="font-poppins p-3 w-full desktop:text-center hidden tablet:block">
             Raglan Creation
           </h1>
         </NavLink>

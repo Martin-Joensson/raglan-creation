@@ -3,6 +3,7 @@
 @theme {
   --font-poppins: Poppins, sans-serif;
   --font-raleway: Raleway, sans-serif;
+  --font-poiret: Poiret One, sans-serif
 
   --breakpoint-*: initial;
   --breakpoint-tablet: 40rem;
@@ -35,12 +36,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  scrollbar-gutter: stable;
 }
 
 hr {
   border-color: #aaa;
   border-style: solid;
   border-width: 2px 0 0;
+}
+
+
+.photoLink {
+  font-family: Poiret One;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+.photoLink:hover {
+  color: #cccccc;
 }
 
 a {
@@ -59,6 +73,8 @@ a:hover {
 #buttonLink {
   color: #ffffff;
 }
+
+
 
 body {
   margin: 0;

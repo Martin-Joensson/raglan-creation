@@ -10,6 +10,7 @@ export const Landing = () => {
     <div className="videoWrapper relative right-0 top-0 min-h-full min-w-screen overflow-hidden">
       <video
         autoPlay
+        playsInline
         muted
         loop
         className="fixed right-0 top-0 min-h-full min-w-screen object-cover opacity-50"
