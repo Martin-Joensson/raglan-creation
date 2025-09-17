@@ -7,7 +7,7 @@ import coin from "../../assets/Coin.png";
 
 export const Catastrophic = () => {
   return (
-    <div className="wide:w-2/3  bg-white text-black flex flex-col">
+    <div className="wide:w-2/3 m-auto h-full bg-white text-black flex flex-col">
       <img src={catastrophic} className="m-auto pb-4" />
       <h2 className="py-4 hidden">Catastrophic Failure</h2>
       <img

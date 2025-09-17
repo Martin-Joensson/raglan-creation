@@ -6,7 +6,7 @@ import { Bio } from "./Bio";
 
 export const Resume = () => {
   return (
-    <div className="flex w-full justify-between">
+    <div className="flex w-screen h-full justify-between">
       {/* Sidebar */}
       {/* <div className="w-1/4">
         <Sidebar />
