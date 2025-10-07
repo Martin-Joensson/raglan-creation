@@ -8,12 +8,13 @@ import { Landing } from "../components/Landing/Landing";
 import { Dopamine } from "../components/DopamineMenu/Dopamine";
 import { Gallery } from "../components/Photography/Gallery";
 import { PhotoStart } from "../components/Photography/PhotoStart";
+import { Foundry } from "../components/Foundry/Foundry";
 
 export const ContentRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
-      <Route path="/photography" element={<PhotoStart/>} />
+      <Route path="/photography" element={<PhotoStart />} />
       <Route path="/photography/*" element={<PhotoStart />} />
       <Route path="/photography/:category" element={<Gallery />} />
       <Route path="/webdev" element={<WebDev />} />
@@ -21,6 +22,7 @@ export const ContentRoutes = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="/dopamine" element={<Dopamine />} />
       <Route path="/catastrophic" element={<Catastrophic />} />
+      <Route path="/foundry" element={<Foundry />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );
