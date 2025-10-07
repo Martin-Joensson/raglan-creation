@@ -4,7 +4,7 @@ export const Foundry = () => {
 
 const foundryLink = import.meta.env.VITE_FOUNDRY_LINK;
 
-   window.location.replace(foundryLink);
+//    window.location.replace(foundryLink);
 
 
   return (
